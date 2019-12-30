@@ -31,6 +31,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
       home: Scaffold(
@@ -66,6 +67,7 @@ class _MyAppState extends State<MyApp> {
         ),
         body: ListView.builder(
           itemCount: 7,
+          controller: ScrollController(initialScrollOffset: 1500.0),
           scrollDirection: Axis.horizontal,
           itemBuilder: (BuildContext context, int index) {
             final int i = index * 12;
