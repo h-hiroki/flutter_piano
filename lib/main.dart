@@ -13,7 +13,9 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
-      home: Scaffold(),
+      home: Scaffold(
+        appBar: AppBar(title: Text('Flutter Piano'),),
+      ),
     );
   }
 }
