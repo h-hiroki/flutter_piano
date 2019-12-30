@@ -26,6 +26,14 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData.dark(),
       home: Scaffold(
         appBar: AppBar(title: Text('Flutter Piano'),),
+        drawer: Drawer(child: SafeArea(child: ListView(children: <Widget>[]))),
+        body: ListView.builder(
+          itemCount: 7,
+          scrollDirection: Axis.horizontal,
+          itemBuilder: (BuildContext context, int index) {
+            return Container();
+          },
+        ),
       ),
     );
   }
